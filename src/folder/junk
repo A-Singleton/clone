@@ -49,3 +49,68 @@ Contact
 
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+      <div>
+        <NavBar />
+          <div className="jumbotron" style={jumbo}>
+            <div className="still" style={inner}>
+              <div className="pan8" style={image}> </div>
+              <Fade bottom>
+                <h1> Thank You </h1>
+                <h2> To our amazing sponsors! </h2>
+              </ Fade>
+            </div>
+          </div>
+          <BottomNav />
+          <Footer />
+      </div>
+
+
+
+      <div >
+        <NavBar />
+          <div >
+            <Jumbotron style={jumbo}>
+              <div className="still" style={still}>
+                <div style={inner}>
+                  <div style={image}>   </div>
+              <Fade bottom>
+                <h1> Thank You </h1>
+                <h2> To our amazing sponsors! </h2>
+              </ Fade>
+              </div>
+              </div>
+            </Jumbotron>
+          </div>
+        <BottomNav />
+        <Footer />
+      </div>
+
+
+      <Row className="show-grid">
+        <Col xs={6} md={4}>
+          <code>&lt;{'Col xs={6} md={4}'} /">">&gt;</code>
+        </Col>
+        <Col xs={6} md={4}>
+          <code>&lt;{'Col xs={6} md={4}'} /">">&gt;</code>
+        </Col>
+        <Col xsHidden md={4}>
+          <code>&lt;{'Col xsHidden md={4}'} /">">&gt;</code>
+        </Col>
+      </Row>
+
+      <Row className="show-grid">
+        <Col xs={6} xsOffset={6}>
+          <code>&lt;{'Col xs={6} xsOffset={6}'} /">">&gt;</code>
+        </Col>
+      </Row>
+
+      <Row className="show-grid">
+        <Col md={6} mdPush={6}>
+          <code>&lt;{'Col md={6} mdPush={6}'} /">">&gt;</code>
+        </Col>
+        <Col md={6} mdPull={6}>
+          <code>&lt;{'Col md={6} mdPull={6}'} /">">&gt;</code>
+        </Col>
+      </Row>
