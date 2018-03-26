@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Button, Jumbotron, Grid } from 'react-bootstrap'
+//import { Button, Jumbotron, Grid } from 'react-bootstrap'
 import NavBar from './NavBar.jsx';
 import Footer from './Footer.jsx';
 import Fade from 'react-reveal/Fade';
 import BottomNav from './BottomNav.jsx';
 import Background from '../images/lionfish_1.jpg';
+import '../App.css';
 
 //import logo from './logo.svg';
 
@@ -35,23 +36,13 @@ class Sponsors extends Component  {
     }
 
     const image = {
-      position: 'absolute',
-      height: '100%',
-      width: '400%',
-      zIndex: '-1',
-      backgroundSize: 'auto 300%',
-      backgroundRepeat: 'no-repeat',
-      animationName: image,
-      animationDuration: '30s',
-      animationTimingFunction: 'linear',
-      animationIterationCount: 'infinite',
-      animationDirection: 'alternate',
-      flex: '0 1 0%',
       backgroundImage: `url(${Background})`,
     }
 
     return (
-        <div style={image}>   </div>
+        <div>
+          <img src={Background} className="Moving-back" />
+        </div>
     );
   }
 }
