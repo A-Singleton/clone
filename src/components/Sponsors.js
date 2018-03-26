@@ -19,35 +19,39 @@ class Sponsors extends Component  {
     }
 
     const inner = {
+    display: 'flex',
+    flex: '1 1 0%',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    alignItems: 'stretch',
+    justifyContent: 'flex-end',
+    padding: '30vh 15px 40px',
+    flexDirection: 'column',
+    }
+
+    const still = {
       display: 'flex',
       flex: '1 1 0%',
-      backgroundColor: 'rgba(0, 0, 0, 0.4)',
+      backgroundColor: 'rgba(0, 0, 0, 0.3)',
     }
 
     const image = {
       position: 'absolute',
       height: '100%',
-      width: '200%',
+      width: '400%',
       zIndex: '-1',
-      backgroundSize: 'auto 180%',
+      backgroundSize: 'auto 300%',
       backgroundRepeat: 'no-repeat',
+      animationName: image,
+      animationDuration: '30s',
+      animationTimingFunction: 'linear',
+      animationIterationCount: 'infinite',
+      animationDirection: 'alternate',
       flex: '0 1 0%',
       backgroundImage: `url(${Background})`,
     }
 
     return (
-    <div>
-        <div style={image}>
-          <Jumbotron>
-            <Fade bottom>
-              <h1> Thank You </h1>
-              <h2> To our amazing sponsors! </h2>
-            </ Fade>
-          </Jumbotron>
-        </div>
-      <BottomNav />
-      <Footer />
-    </div>
+        <div style={image}>   </div>
     );
   }
 }
