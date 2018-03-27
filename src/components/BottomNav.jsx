@@ -6,7 +6,6 @@ class BottomNav extends Component {
   render() {
 
 const bottomNav = {
-    position: 'absolute',
     bottom: '60px',
     width: '100%',
     height: '300px',
