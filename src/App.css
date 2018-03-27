@@ -26,3 +26,29 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Moving-back {
+    animation: Moving-back-path;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: auto 180%;
+    background-repeat: no-repeat;
+    -webkit-animation-name: Moving-back-path;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes Moving-back-path {
+    from {left: -20px;}
+    to {left: 0px;}
+}
+
+@-webkit-keyframes Moving-back-path {
+    from {left: -20px;}
+    to {left: 0px;}
+}
