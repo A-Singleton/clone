@@ -129,9 +129,9 @@ class Sponsors extends Component  {
                 <div style={inner}>
                   <div className="inner" style={reveal}>
                     <div >
-                      <p style={headline}>INNOVATIONS FOR HEALTHY OCEANS</p>
-                        <div style={underscore}>
-                        </div>
+                      <p style={headline}>Thank You</p>
+                        <div style={underscore}> </div>
+                        <p style={paras}> to our great sponsors </p>
                     </div>
                   </div>
                   <div style={bottomButton}>
@@ -139,7 +139,7 @@ class Sponsors extends Component  {
                 </div>
               </div>
             </div>
-            <div id="problem" className="problem" style={problem}>
+            <div id="sponsors" className="sponsors" style={problem}>
               <div style={underscore}>
               </div>
               <br/>
