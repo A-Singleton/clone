@@ -99,6 +99,38 @@ class Home extends Component  {
       opacity: '1',
     }
 
+    const working = {
+      backgroundColor: 'rgb(0, 0, 0)',
+      flex: '1 1 0%',
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+      width: '100vw',
+    }
+
+    const commitment = {
+      backgroundColor: 'rgb(20, 148, 201)',
+      flex: '0 1 0%',
+      height: '140px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+      paddingLeft: '15vw',
+      paddingRight: '15vw',
+      }
+
+      const handshake = {
+        flex: '1 1 0%',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        width: '100vw',
+        padding: '8vh 15vw',
+      }
+
     const subtitle = {
       wordBreak: 'keep-all',
       overflowWrap: 'normal',
@@ -116,6 +148,22 @@ class Home extends Component  {
       fontSize: '20px',
       marginTop: '30px',
       fontFamily: 'Prompt',
+    }
+
+    const commitPara = {
+      wordBreak: 'keep-all',
+      color: 'rgba(255, 255, 255, 0.8)',
+      fontSize: '14px',
+      marginTop: '30px',
+      fontWeight: '500',
+    }
+
+    const handPara = {
+      wordBreak: 'keep-all',
+      color: 'rgba(0, 0, 0, 0.6)',
+      fontSize: '14px',
+      marginTop: '30px',
+      fontWeight: '500',
     }
 
     const navButtonPlacement = {
@@ -150,7 +198,7 @@ class Home extends Component  {
                 </div>
               </div>
               <div style={bottomButton}>
-              <a href="#problem" style={navButtonPlacement}> <img src={Background} style={navButton}/> </a>
+              <a className="pulse" href="#problem" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
               </div>
             </div>
           </div>
@@ -169,15 +217,21 @@ class Home extends Component  {
              sites by nearly 80% and reducing overall native species biomass
               by over 60%. </p>
           </Fade>
+          <div style={bottomButton}>
+          <a className="pulse" href="#working" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
+          </div>
         </div>
-        <div id="working" className="working" style={problem}>
+        <div id="working" className="working" style={working}>
           <div style={underscore}>
           </div>
           <br/>
           <h1 style={subtitle}> THE LIONFISH PROBLEM </h1>
           <p style={paras}> Lionfish need to be gotten rid of honestly </p>
+          <div style={bottomButton}>
+          <a className="pulse" href="#stillGrid" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
+          </div>
         </div>
-        <div className="still" style={still}>
+        <div id="stillGrid" className="stillGrid" style={still}>
           <div className="Moving-back" style={image}>
           </div>
           <div style={inner}>
@@ -189,16 +243,27 @@ class Home extends Component  {
               </div>
             </div>
             <div style={bottomButton}>
+            <a className="pulse" href="#commitment" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
             </div>
           </div>
         </div>
-        <div id="commitment" className="commitment" style={problem}>
-          <div style={underscore}>
-          </div>
-          <br/>
-          <h1 style={subtitle}> THE LIONFISH PROBLEM </h1>
+        <div id="commitment" className="commitment" style={commitment}>
           <Fade bottom>
-            <p style={paras}> Lionfish need to be gotten rid of honestly </p>
+            <p style={commitPara}>We are currently focusing our research in Escambia
+             County, Okaloosa County and Santa Rosa County, with the vision of
+             tackling lionfish infestations plaguing the entire Gulf Coast
+             and beyond. </p>
+          </Fade>
+        </div>
+
+        <div id="handshake" className="handshake" style={handshake}>
+          <Fade bottom>
+          <div style={underscore}></div>
+            <br/>
+            <p style={handPara}>We are currently focusing our research in Escambia
+             County, Okaloosa County and Santa Rosa County, with the vision of
+             tackling lionfish infestations plaguing the entire Gulf Coast
+             and beyond. </p>
           </Fade>
         </div>
 

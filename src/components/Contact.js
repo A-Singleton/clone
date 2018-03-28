@@ -14,13 +14,14 @@ class Contact extends Component  {
       padding: '0px',
       height: '100vh',
       marginBottom: '0px',
+      textAlign: 'center',
+      alignItems: 'center'
     }
 
     const still = {
       display: 'flex',
       flex: '1 1 0%',
       backgroundColor: 'rgba(0, 0, 0, 0.3)',
-
       position: 'relative',
       height: '100%',
       width: '100%',
@@ -38,9 +39,8 @@ class Contact extends Component  {
     const reveal = {
       flex: '1 1 0%',
       display: 'flex',
-      justifyContent: 'space-between',
       flexDirection: 'column',
-      alignItems: 'flex-start',
+      alignItems: 'center',
       paddingLeft: '8px',
       paddingRight: '20vw',
       opacity: '1',
@@ -50,8 +50,8 @@ class Contact extends Component  {
     display: 'flex',
     flex: '1 1 0%',
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    alignItems: 'stretch',
-    justifyContent: 'flex-end',
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: '30vh 15px 40px',
     flexDirection: 'column',
     }
@@ -62,8 +62,6 @@ class Contact extends Component  {
       minHeight: '5px',
       maxWidth: '88px',
       maxHeight: '5px',
-      flex: '0 1 0%',
-      display: 'flex',
       backgroundColor: 'rgb(255, 255, 255)',
     }
 

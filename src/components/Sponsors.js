@@ -119,6 +119,21 @@ class Sponsors extends Component  {
       fontFamily: 'Prompt',
     }
 
+    const navButtonPlacement = {
+      flex: '0 1 0%',
+      justifyContent: 'center',
+      alignItems: 'center',
+      display: 'flex',
+      height: '60px',
+      width: '60px',
+      padding: '7px 10px 13px',
+    }
+
+    const navButton = {
+      maxHeight: '40px',
+      maxWidth: '40px',
+    }
+
     return (
         <div>
           <NavBar />
@@ -128,13 +143,16 @@ class Sponsors extends Component  {
                 </div>
                 <div style={inner}>
                   <div className="inner" style={reveal}>
+                  <Fade bottom>
                     <div >
                       <p style={headline}>Thank You</p>
                         <div style={underscore}> </div>
                         <p style={paras}> to our great sponsors </p>
                     </div>
+                    </ Fade>
                   </div>
                   <div style={bottomButton}>
+                  <a className="pulse" href="#sponsors" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
                   </div>
                 </div>
               </div>

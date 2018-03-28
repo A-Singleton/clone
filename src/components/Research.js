@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import
 import NavBar from './NavBar.jsx';
 import Footer from './Footer.jsx';
 import BottomNav from './BottomNav.jsx';
