@@ -11,11 +11,15 @@ const bottomNav = {
     height: '300px',
     lineHeight: '60px',
     backgroundColor: '#f5f5f5',
-    flexDirection: 'flex-left'
+    flexDirection: 'flex-left',
+    padding: '3em 5vw',
 }
 
 const linkStyle = {
   padding: '-0px',
+  fontWeight: '300',
+  letterSpacing: '1p',
+  textAlign: 'start'
 }
 
   return(

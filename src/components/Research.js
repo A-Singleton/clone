@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-//import
+import {LineChart, Line, AreaChart, Area, Brush, XAxis, YAxis, CartesianGrid, Tooltip,
+	ComposedChart} from 'recharts';
 import NavBar from './NavBar.jsx';
 import Footer from './Footer.jsx';
 import BottomNav from './BottomNav.jsx';
@@ -87,16 +88,14 @@ class Research extends Component  {
     }
 
     const problem = {
-      backgroundColor: 'rgb(28, 51, 92)',
-      flex: '1 1 0%',
       display: 'flex',
-      alignItems: 'center',
+      flex: '1 1 0%',
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      alignItems: 'flex-start',
+      justifyContent: 'flex-end',
+      padding: '30px 5vw 70px',
       flexDirection: 'column',
-      justifyContent: 'flex-start',
       width: '100vw',
-      paddingTop: '9vh',
-      paddingBottom: '5em',
-      opacity: '1',
     }
 
     const subtitle = {
@@ -118,9 +117,154 @@ class Research extends Component  {
       fontFamily: 'Prompt',
     }
 
+    const navButtonPlacement = {
+      flex: '0 1 0%',
+      justifyContent: 'center',
+      alignItems: 'center',
+      display: 'flex',
+      height: '60px',
+      width: '60px',
+      padding: '7px 10px 13px',
+    }
+
+    const navButton = {
+      maxHeight: '40px',
+      maxWidth: '40px',
+    }
+
+    const data = [
+      {name: 'Page A', uv: 4000, pv: 9000},
+      {name: 'Page B', uv: 3000, pv: 7222},
+      {name: 'Page C', uv: 2000, pv: 6222},
+      {name: 'Page D', uv: 1223, pv: 5400},
+      {name: 'Page E', uv: 1890, pv: 3200},
+      {name: 'Page F', uv: 2390, pv: 2500},
+      {name: 'Page G', uv: 3490, pv: 1209},]
+
     return (
       <div>
       <NavBar />
+
+              <div className="jumbotron" style={jumbo}>
+                <div className="still" style={still}>
+                  <div className="Moving-back" style={image}>
+                  </div>
+                  <div style={inner}>
+                    <div className="inner" style={reveal}>
+                      <div >
+                        <p style={headline}>Research</p>
+                          <div style={underscore}> </div>
+                      </div>
+                    </div>
+                    <div style={bottomButton}>
+                    <a className="pulse" href="#working" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="sponsors" className="sponsors" style={problem}>
+                <div style={underscore}>
+                </div>
+                <br/>
+
+                <div>
+
+                  <ComposedChart width={935} height={308} data={data} syncId="anyId">
+                    <XAxis dataKey="name"/>
+                    <YAxis/>
+                    <CartesianGrid strokeDasharray="3 3"/>
+                    <Tooltip/>
+                    <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+                    <Brush />
+                  </ComposedChart>
+                    <div style={bottomButton}>
+                    <a className="pulse" href="#working" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
+                    </div>
+                </div>
+              </div>
+              <div id="sponsors" className="sponsors" style={problem}>
+                <div style={underscore}>
+                </div>
+                <br/>
+
+                <div>
+                	<h4>A demo of synchronized AreaCharts</h4>
+                  <ComposedChart width={600} height={200} data={data} syncId="anyId"
+                        margin={{top: 10, right: 30, left: 0, bottom: 0}}>
+                    <XAxis dataKey="name"/>
+                    <YAxis/>
+                    <CartesianGrid strokeDasharray="3 3"/>
+                    <Tooltip/>
+                    <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+                    <Brush />
+                  </ComposedChart>
+
+                </div>
+
+                <div>
+                	<h4>A demo of synchronized AreaCharts</h4>
+                  <ComposedChart width={600} height={200} data={data} syncId="anyId"
+                        margin={{top: 10, right: 30, left: 0, bottom: 0}}>
+                    <XAxis dataKey="name"/>
+                    <YAxis/>
+                    <CartesianGrid strokeDasharray="3 3"/>
+                    <Tooltip/>
+                    <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+                    <Brush />
+                  </ComposedChart>
+
+                </div>
+
+                <div>
+                	<h4>A demo of synchronized AreaCharts</h4>
+                  <ComposedChart width={600} height={200} data={data} syncId="anyId"
+                        margin={{top: 10, right: 30, left: 0, bottom: 0}}>
+                    <XAxis dataKey="name"/>
+                    <YAxis/>
+                    <CartesianGrid strokeDasharray="3 3"/>
+                    <Tooltip/>
+                    <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+                    <Brush />
+                  </ComposedChart>
+                </div>
+
+                <div style={bottomButton}>
+                <a className="pulse" href="#working" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
+                </div>
+
+                </div>
+              <div id="sponsors" className="sponsors" style={problem}>
+                <div style={underscore}>
+                </div>
+                <br/>
+
+                <div>
+                  <h4>A demo of synchronized AreaCharts</h4>
+                  <ComposedChart width={600} height={200} data={data}
+                        margin={{top: 10, right: 30, left: 0, bottom: 0}}>
+                    <XAxis dataKey="name"/>
+                    <YAxis/>
+                    <CartesianGrid strokeDasharray="3 3"/>
+                    <Tooltip/>
+                    <Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
+                    <Line type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+                    <Brush />
+                  </ComposedChart>
+
+                </div>
+                <div style={bottomButton}>
+                <a className="pulse" href="#working" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
+                </div>
+              </div>
 
               <div className="jumbotron" style={jumbo}>
                 <div className="still" style={still}>
@@ -138,15 +282,9 @@ class Research extends Component  {
                   </div>
                 </div>
               </div>
-              <div id="sponsors" className="sponsors" style={problem}>
-                <div style={underscore}>
-                </div>
-                <br/>
-                <h1 style={subtitle}> THE LIONFISH PROBLEM </h1>
-                <p style={paras}> Lionfish need to be gotten rid of honestly </p>
-              </div>
-      <Footer />
+
       <BottomNav />
+        <Footer />
       </div>
     );
   }
