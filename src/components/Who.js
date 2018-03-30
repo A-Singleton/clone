@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap'
+import Fade from 'react-reveal/Fade';
+import { Carousel } from 'react-bootstrap';
 import NavBar from './NavBar.jsx';
 import Footer from './Footer.jsx';
 import BottomNav from './BottomNav.jsx';
@@ -310,7 +311,6 @@ const navButton = {
                 <div >
                   <p style={headline}>Who We are</p>
                     <div style={underscore}> </div>
-                    <p style={paras}> to our great sponsors </p>
                 </div>
               </div>
               <div style={bottomButton}>
@@ -323,6 +323,7 @@ const navButton = {
           <div style={underscore}></div>
           <br/>
           <h1 style={subtitle}> THE LIONFISH PROBLEM </h1>
+          <Fade left>
           <div style={bios}>
             <div style={pic} > </div>
               <div style={role}>
@@ -334,7 +335,8 @@ const navButton = {
               </div>
                 <div style={bioText}> <p style={bioP}>Yuan is a project manager, software engineer and mathematician who brings tech entrepreneurship experience and data-driven strategy to AMRC. Yuan offers both technical and nontechnical experience as well as a faith-driven mission to the group. Yuan holds a degree in mathematics from Princeton University, where he won $60,000 in prizes for puzzle solving and found success in entrepreneurship and programming competitions for startups in algorithmic medical triage to robotic bartending. In industry, Yuan has worked in data modeling, software engineering, and product management capacities at high powered firms in aerospace, computer vision, and global macro hedge funds. </p> </div>
           </div>
-
+          </Fade>
+          <Fade right>
           <div style={bios}>
                 <div style={bioText}> <p style={bioP}>Yuan is a project manager, software engineer and mathematician who brings tech entrepreneurship experience and data-driven strategy to AMRC. Yuan offers both technical and nontechnical experience as well as a faith-driven mission to the group. Yuan holds a degree in mathematics from Princeton University, where he won $60,000 in prizes for puzzle solving and found success in entrepreneurship and programming competitions for startups in algorithmic medical triage to robotic bartending. In industry, Yuan has worked in data modeling, software engineering, and product management capacities at high powered firms in aerospace, computer vision, and global macro hedge funds. </p> </div>
                 <div style={role}>
@@ -346,7 +348,8 @@ const navButton = {
                 </div>
                 <div style={pic} > </div>
           </div>
-
+          </Fade>
+          <Fade left>
           <div style={bios}>
             <div style={pic} > </div>
               <div style={role}>
@@ -358,7 +361,8 @@ const navButton = {
               </div>
                 <div style={bioText}> <p style={bioP}>Yuan is a project manager, software engineer and mathematician who brings tech entrepreneurship experience and data-driven strategy to AMRC. Yuan offers both technical and nontechnical experience as well as a faith-driven mission to the group. Yuan holds a degree in mathematics from Princeton University, where he won $60,000 in prizes for puzzle solving and found success in entrepreneurship and programming competitions for startups in algorithmic medical triage to robotic bartending. In industry, Yuan has worked in data modeling, software engineering, and product management capacities at high powered firms in aerospace, computer vision, and global macro hedge funds. </p> </div>
           </div>
-
+          </Fade>
+          <Fade right>
           <div style={bios}>
                 <div style={bioText}> <p style={bioP}>Yuan is a project manager, software engineer and mathematician who brings tech entrepreneurship experience and data-driven strategy to AMRC. Yuan offers both technical and nontechnical experience as well as a faith-driven mission to the group. Yuan holds a degree in mathematics from Princeton University, where he won $60,000 in prizes for puzzle solving and found success in entrepreneurship and programming competitions for startups in algorithmic medical triage to robotic bartending. In industry, Yuan has worked in data modeling, software engineering, and product management capacities at high powered firms in aerospace, computer vision, and global macro hedge funds. </p> </div>
                 <div style={role}>
@@ -370,6 +374,7 @@ const navButton = {
                 </div>
                 <div style={pic} > </div>
           </div>
+          </Fade>
           <div style={bottomButton}>
             <a className="pulse" href="#carousel" style={navButtonPlacement}> <img src={Background} style={navButton} alt="button"/> </a>
           </div>
